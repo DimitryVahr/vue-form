@@ -1,16 +1,21 @@
 <template>
   <div id="app">
-    <HelloWorld msg="Good morning World" />
+    <app-form>
+      <app-input placeholder="Placeholder" error="Заполните поле" />
+      <app-textarea placeholder="Placeholder" error="Заполните поле" />
+    </app-form>
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
-
+import AppForm from "./components/AppForm.vue";
+import AppInput from "./components/AppInput.vue";
+import AppTextarea from "./components/AppTextarea.vue";
 export default {
-  name: "App",
   components: {
-    HelloWorld,
+    AppForm,
+    AppInput,
+    AppTextarea,
   },
 };
 </script>
